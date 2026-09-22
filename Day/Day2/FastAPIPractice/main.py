@@ -11,4 +11,11 @@ def about():
 @app.get("/health")
 def health():
     return {"status":"ok"}
-    
+
+#post request
+@app.post("/create")
+def create_somethind():
+    return {"message":"created"}
+@app.get("/student/{usn}")
+def get_result(usn):
+    return{"usn":usn,"result":"distinction"}
