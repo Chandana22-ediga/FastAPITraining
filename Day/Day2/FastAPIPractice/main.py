@@ -19,3 +19,6 @@ def create_somethind():
 @app.get("/student/{usn}")
 def get_result(usn):
     return{"usn":usn,"result":"distinction"}
+@app.get("/candidate/{usn}")
+def get_candidate(usn:int):
+    return{"result":"distinction","usn":usn,}
