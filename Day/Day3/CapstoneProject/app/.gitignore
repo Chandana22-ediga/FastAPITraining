@@ -1,0 +1,98 @@
+# ==========================================
+# FastAPI Specific Exclusions
+# ==========================================
+# Environment variable files (contains sensitive API keys, database URLs)
+.env
+.env.*
+!.env.example
+
+# Local SQLite databases (often used during FastAPI development)
+*.db
+*.sqlite3
+
+# FastAPI / Uvicorn / Gunicorn logs
+*.log
+log/
+logs/
+
+# ==========================================
+# Python Standard Exclusions
+# ==========================================
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# C extensions
+*.so
+
+# Distribution / packaging
+bin/
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# ==========================================
+# Virtual Environments
+# ==========================================
+.venv/
+venv/
+ENV/
+env/
+ENV/
+pip-log.txt
+pip-delete-this-directory.txt
+
+# ==========================================
+# Testing and Code Quality
+# ==========================================
+# pytest and coverage
+.pytest_cache/
+.htmlcov/
+htmlcov/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+*.py,cover
+
+# Linting and Type Checking (Ruff, MyPy, Black)
+.ruff_cache/
+.mypy_cache/
+.dmypy.json
+dmypy.json
+.pyre/
+.pytype/
+
+# ==========================================
+# IDEs and Editors
+# ==========================================
+# VS Code
+.vscode/
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+
+# PyCharm / JetBrains
+.idea/
+
+# OS-generated files
+.DS_Store
+Thumbs.db
